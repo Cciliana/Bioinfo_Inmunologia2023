@@ -2,18 +2,14 @@
 
 R es un lenguaje de programación para estadística y representación gráfica de software libre. 
 
-
 **Ventajas de R**
 
 1. R tiene muchos paquetes complementarios: pero se usa en biología,tiene una colección de paquetes muy amplia.
-
 2. Todas las paqueterías son de libre acceso (ya saben, la ciencia que no se comunica no es ciencia).
-
 
 **R también tiene sus cositas**
 
 1. No fue escrito para no programadores.
-
 2. Es un nuevo lenguaje que aprender, así que tiene su curva de aprendizaje, como cuando aprendes hablar cualquier idioma.
 
 3. Solo habla inglés.
@@ -32,15 +28,22 @@ Trabajar en R sigue una estructura básica de comunicación. Siempre hay un emis
 Obtención de ayuda básica en R
 
 Manual básico de R: `help.start()´
+
 Ayuda de comandos específicos
+
 `?nombredelcomando´ 
+
 ejemplo:
+
 `?plot´
 `?log´ para ver comandos con logaritmos
-Para ver un ejemplo 
-````
+
+Para ver un ejemplo :
+
+```
 example (log)
 example (plot)
+
 ´´´
 
 
