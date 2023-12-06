@@ -1,4 +1,4 @@
-### Introducción a la programación en R
+##### Introducción a la programación en R
 
 R es un lenguaje de programación para estadística y representación gráfica de software libre. 
 
@@ -17,6 +17,7 @@ Y bueno, vamos a comenzar a explorarlo. Lo primero, porqué les pedimos instalar
 Trabajar en R sigue una estructura básica de comunicación. Siempre hay un emisor y un receptor. Cada que nosotros hablemos con R, tendremos que dar un enter. Después de eso, el nos mostrara su respuesta. 
 
 **Entonces, manos al teclado:**
+
 Obtención de ayuda básica en R
 Manual básico de R: 'help.start()'
 
