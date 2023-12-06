@@ -1,4 +1,4 @@
-###Introducción a la programación en R###
+### Introducción a la programación en R
 
 R es un lenguaje de programación para estadística y representación gráfica de software libre. 
 **Ventajas de R**
