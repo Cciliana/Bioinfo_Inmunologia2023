@@ -11,9 +11,7 @@ R es un lenguaje de programación para estadística y representación gráfica d
 
 1. No fue escrito para no programadores.
 2. Es un nuevo lenguaje que aprender, así que tiene su curva de aprendizaje, como cuando aprendes hablar cualquier idioma.
-
 3. Solo habla inglés.
-
 
 Y bueno, vamos a comenzar a explorarlo. Lo primero, porqué les pedimos instalar dos Rs, les contare que RStudio en un entorno de programación, osease es un programa que nos va a ayudar a escribir programas, y es super buena onda… porque cuando somos nuevos podemos cometer muchos errores al escribir código, R pensó en eso y para ayudarnos tiene herramientas para buscar errores en los códigos, así como el autocorrector de su word. Conforme vayamos avanzando se darán cuenta de lo importante que es esto de identificar los errores.
 
@@ -22,29 +20,23 @@ Y bueno, vamos a comenzar a explorarlo. Lo primero, porqué les pedimos instalar
 
 Trabajar en R sigue una estructura básica de comunicación. Siempre hay un emisor y un receptor. Cada que nosotros hablemos con R, tendremos que dar un enter. Después de eso, el nos mostrara su respuesta. 
 
-
 **Entonces, manos al teclado:**
 
 Obtención de ayuda básica en R
 
-Manual básico de R: `help.start()´
++Manual básico de R:
+`help.start()´
 
-Ayuda de comandos específicos
-
++Ayuda de comandos específicos:
 `?nombredelcomando´ 
 
-ejemplo:
-
 `?plot´
-`?log´ para ver comandos con logaritmos
+`?log´ 
 
-Para ver un ejemplo :
++Para ver un ejemplo de la función:
+`example (log)´
+`example (plot)´
 
-```
-example (log)
-example (plot)
-
-´´´
 
 
 
