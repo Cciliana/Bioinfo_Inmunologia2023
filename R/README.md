@@ -29,9 +29,19 @@ Trabajar en R sigue una estructura básica de comunicación. Siempre hay un emis
 
 **Entonces, manos al teclado:**
 
-
 Obtención de ayuda básica en R
 
-Manual básico de R: 'help.start()'
+Manual básico de R: `help.start()´
+Ayuda de comandos específicos
+`?nombredelcomando´ 
+ejemplo:
+`?plot´
+`?log´ para ver comandos con logaritmos
+Para ver un ejemplo 
+````
+example (log)
+example (plot)
+´´´
+
 
 
