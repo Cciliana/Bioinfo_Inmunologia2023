@@ -10,8 +10,7 @@ Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 **Nota:** contesten el siguiente cuestinario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
 
 ---
-
-### **HOLA, POR FAVOR TE SOLICITAMOS QUE LLEGUES A LA *CLASE 1* CON LOS SIGUIENTES PROGRAMAS YA INSTALADOS EN TU ORDENADOR**
+**¡Por favor, es muy importante que tengas instalados los siguientes programas para el primer día de clases¡. El tiempo es corto así que tratemos de aprovecharlo.**
 
 ### **Instalación de WSL (*Windows Subsystem for Linux*) y del lenguaje de programación R**
 
@@ -29,4 +28,4 @@ También instalen R y Rstudio por favor, de preferencia la versión más recient
 + https://cran.r-project.org/bin/windows/base/
 + https://posit.co/download/rstudio-desktop/
 
-No duden en contactarnos si tienen alguna duda o problema de instalación. Es importante que tengan instalado progrmas para el día de la clase, por favor. El tiempo es corto así que tratemos de aprovecharlo.
+No duden en contactarnos si tienen alguna duda o problema de instalación. 
