@@ -145,7 +145,7 @@ knockout_weight <- c(0, 10, 20, 40, -10, -15, -30, -20, -15)
 Ahora vamos a nombrar un vector, como los grandes analistas de datos que serán. Recuerden que es importante siempre tener una visión clara de los datos que están usando, y entender a que se refiere cada elemento es esencial para lograrlo.
 
 ```ruby
-days_vector <- c(“0d”, “3d”, “6d”, “9d”, “12d”, “15d”, “18d”, “21d”, “24d” )
+days_vector <- c("0d", "3d", "6d", "9d", "12d", "15d", "18d", "21d", "24d" )
 names(wild_weight) <- days_vector
 names(knockout_weight) <- days_vector
 
