@@ -255,8 +255,8 @@ A practicar:
 #Selecciona los datos del knockout y colócalo en una variable:
 parameters_knockdown <- matrix_protein [,2]
 
-#Selecciona solo los valores de peso
-parameters_weight <- matrix_protein [1:2]
+#Selecciona solo los datos datos de peso inicial y final
+parameters_weight <- matrix_protein [1:2, 1:2]
 
 #¿Cuál es la media de los pesos obtenidos?
 mean(parameters_weight)
