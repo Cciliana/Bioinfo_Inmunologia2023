@@ -313,6 +313,53 @@ str(expression_data)
 summary(expression_data)
 ```
 
+Las reglas para seleccionas elementos del data frame son las mismas que para las matrices, solo le vamos a sumar una más. En los data frame puedes ussar el signo `$nombredelacolumna` para seleccionar una columna completa.
+
+```ruby
+#Selecciona el valor ubicado en la fila 1, columna 3)
+expression_data[1,3]
+
+#Selecciona la fila 4
+expression_data[4,]
+
+#Selecciona los primeros 5 genes de la columna "hgnc_symbol"
+expression_data[1:5,"hgnc_symbol"]
+
+#Almacena en una variable los datos de p ajustada
+padj_values <- expression_data$padj
+padj_values
+```
+
+Un extra para seleccionar en data frame, apliquen la siguiente funcion `subset()` y describan que observan.
+
+```ruby
+#Selecciona los valores con Log2FC mayor a 2
+subset(expression_data, subset = log2FoldChange >2)
+```
+
+Finalmente, aprenderemos a como ordenar datos:
+
+```ruby
+#Sorting
+a <- c(100, 10, 1000)
+order(a)
+a[order(a)]
+
+#Usa la función order en la matriz de datos, para que los genes queden posicionados de acuerdo a su valor de expresión
+positions <- order(expression_data$log2FoldChange)
+
+#Usa el orden establecido en la variables positions para organizar todo el data frame
+expression_data[positions, ]
+```
+---
+### **EJERCICIO A CASA**
+
+Realiza una selección para que únicamente te queden las columnas de los genes, los valores de log2FC, padj. Determina los valores estadisticos básicos y posicionalos de acuerdo al valor de padj.
+
+
+
+
+
 
 
 
