@@ -289,9 +289,9 @@ expe_mouse
 str(expe_mouse)
 ```
 
-Vamos a trabajar con un data frame un tanto más grande, pero al que nos vamos a enfrentar comunmente en los análisis OMICOS, lo primero es colocar el data frame en la carpeta en la que han estado trabajando.
+Vamos a trabajar con un data frame un tanto más grande, pero al que nos vamos a enfrentar comúnmente en los análisis OMICOS, lo primero es descaargar el archivo "expression_RNASeq.csv" (lo ajunto en la carpeta "R" de Github) y colocarlo en la carpeta de trabajo.
 
-El siguente paso es cargarlo en nuestro espacio de trabajo:
+El siguente paso es leerlo en nuestro espacio de trabajo:
 ```ruby
 #Leer data frame de datos de expresión de RNASeq
 expression_data <- read.csv("expression_RNASeq.csv")
