@@ -10,7 +10,7 @@ Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 **Nota:** contesten el siguiente cuestinario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
 
 ---
-**¡Por favor, es muy importante que tengas instalados los siguientes programas para el primer día de clases¡. El tiempo es corto así que tratemos de aprovecharlo.**
+**¡Por favor, es muy importante que tengas instalados los siguientes programas para el primer día de clases!. El tiempo es corto así que tratemos de aprovecharlo.**
 
 ### **Instalación de WSL (*Windows Subsystem for Linux*) y del lenguaje de programación R**
 
