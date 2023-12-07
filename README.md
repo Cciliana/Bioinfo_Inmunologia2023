@@ -11,6 +11,8 @@ Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 
 ---
 
+## **HOLA, POR FAVOR TE SOLICITAMOS QUE LLEGUES A LA *CLASE 1* CON LOS SIGUIENTES PROGRAMAS YA INSTALADOS EN TU COMPU**
+
 ### **Instalación de WSL (*Windows Subsystem for Linux*) y del lenguaje de programación R**
 
 No pretendemos que se vuelvan expertos en Linux hoy, pero si nos gustaría que se lleven una noción de como desenvolverse en un entorno con este SO. Para ello haremos uso de la terminal Linux con una distribución Ubuntu, si tienes Mac, no te precupes en esencia es lo mismo.  Lo más seguro es que tengas Windows y si es el 10 u 11 ya la hicimos, solo deberás instalar WLS (Windows Subsystem for Linux) para poder ejecutar el Kernel de Linux en tu equipo Windows (bendito sea el Sr). 
