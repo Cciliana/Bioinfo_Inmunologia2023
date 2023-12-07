@@ -232,9 +232,9 @@ Lo primero es hacer la matriz con esos nuevos datos:
 expression_flow <- c(50.5, 10.1)
 expression_wb <- c(120, 23)
 expression_csf <- c(expression_flow, expression_wb)
-matrix_expression <- matrix(expression_csf, nrow =2, byrow =TRUE,
-                                         dimnames = list (c(“IMF_CSF1”, “WB_CSF1” ), 
-                                                          c((“Wild_type”, “Knockdout_CSF1”))
+matrix_expression <- matrix(expression_csf, nrow =2, byrow =TRUE, 
+                            dimnames = list (c("IMF_CSF1", "WB_CSF1" ), 
+                                             c("Wild_type", "Knockdout_CSF1")))
 matrix_protein <- rbind (matrix_parameters, matrix_expression)
 matrix_protein
 ```
