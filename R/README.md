@@ -103,7 +103,7 @@ Vamos hacer unas pruebitas, van a asignar los siguientes valores a tres variable
 numerics <- 54
 numerics
 
-characters <- ATCGATUGAAATTAAGCAT
+characters <- "ATCGATUGAAATTAAGCAT"
 characters
 
 logical <- TRUE
@@ -213,8 +213,8 @@ matrix_parameters <- matrix(parameters, byrow = TRUE, nrow = 3)
 Así como es importante nombrar las variables, hay que nombrar las matrices:
 ```ruby
 #Coloca en un vector los nombres de las distintas condiciones que se encontraran en las filas y columnas
-name_parameters <- c(“Initial weight (g)”, “Final weight (g)”, “Tumor volume (mm3)”)
-condition <- c("Wild_type", “Knockout_CSF1”)
+name_parameters <- c("Initial weight (g)", "Final weight (g)", "Tumor volume (mm3)")
+condition <- c("Wild_type", "Knockout_CSF1")
 
 #Nombra las columnas con la condición
 colnames(matrix_parameters) <- condition
