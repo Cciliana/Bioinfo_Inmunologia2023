@@ -47,8 +47,9 @@ Por ejemplo:
 3 + 4
 ```
 También puedes ejecutar comandos de R directamente en la consola. Esta es una buena forma de experimentar con el código R.
+
 ---
-### **Aritmética en R**
+### **ARITMÉTICA EN R**
 La forma más básica de usar R es como una calculadora (eso sí, de esas finas con graficador y todo).
 Vamos hacer aritmética con R, para ello es importante que siempre recuerdes que usa los siguientes operadores aritméticos:
 
@@ -74,7 +75,7 @@ A la terminal:
 ```
 
 ---
-### **Variables**
+### **VARIABLES**
 
 R trabaja con variables, un concepto básico (estadístico) en programación. Es un elemento del lenguaje al que le podemos asignar un valor, para definir una variable en R se realiza una operación de asignación empleando el signo `<-`:
 ```
@@ -114,6 +115,166 @@ Vamos a usar el siguiente comando `class()` para saber que tipo de dato es:
 #Corrobora el tipo de dato asignado a tus variables
 class(numerics)
 ```
+Saber con que tipo de datos estamos trabajando es muy importante a la hora de organizar tablas muy grandes, o incluso en seleccionar que tipo de operación vamos a usar para cada tipo de datos.
+
+#### **¿Subimos la complejidad?**
+
+Estamos haciendo un experimento que va a salvar nuestra tesis, vamos a guardar el número de ratones que tenemos para cada condición:
+```
+#Asigna un valor a cada condición
+wild_type <- 6
+knockout_csf <- 6
+
+#¿Cuál es el resultado de sumar todas las variables?
+wild_type + knockout_csf
+
+#Crea una variable que tenga todas tus variables:
+best_experiment <- wild_type + knockout_csf
+```
+---
+#### **VECTORES**
+
+El siguiente paso es conocer otros elementos que se pueden asignar a una variable, vamos a ver qué es un vector. Un vector en R es un arreglo unidimensional que puede contener datos numéricos, caracteres o datos lógicos. En términos prácticos diríamos que un vector es otra herramienta para guardar varios datos en un solo espacio. Para crear un vector en R se coloca la función `c()`, dentro de los paréntesis van a ir los elementos que tu desees, estos siempre deben ir separados por una coma.
+
+Regresemos a los ratones:
+Los ratoncitos fueron inoculados con una línea que forma tumores mamarios, el peso de cada ratón fue registrado cada 3 días durante 24 días, aquí mostramos el ejemplo de uno de ellos:
+```
+wild_weight <- c(0, 10, 20, 60, 78, 80, 75, 90, 95)
+knockout_weight <- c(0, 10, 20, 40, -10, -15, -30, -20, -15)
+```
+Ahora vamos a nombrar un vector, como los grandes analistas de datos que serán. Recuerden que es importante siempre tener una visión clara de los datos que están usando, y entender a que se refiere cada elemento es esencial para lograrlo.
+
+```
+days_vector <- c(“0d”, “3d”, “6d”, “9d”, “12d”, “15d”, “18d”, “21d”, “24d” )
+names(wild_weight) <- days_vector
+names(knockout_weight) <- days_vector
+
+#No olvides decirle a R que te muestre el resultado:
+wild_weight
+knockout_weight
+```
+Vamos a realizar operaciones que nos ayuden a conocer a nuestros datos:
+```
+#Calcular cuánto peso gano cada uno de los ratoncitos
+
+total_wild <- sum(wild_weight)
+total_knockout <- sum(knockout_weight)
+
+#¿El ratón knockout tiene mayor o menor peso que el control?:
+total_wild>total_knockout
+total_wild<total_knockout
+```
+Ustedes pueden realizar casi cualquier comparación que se les venga a mente, aquí les dejamos los operadores lógicos más usados en R:
+
+`<`Menor que
+
+`>`Mayor que
+
+`<=`Menor o igual a
+
+`>=`Mayor o igual a
+
+`==`Iguales entre sí
+
+`¡=`Diferentes entre si
+
+Vamos a aprender a como crear una nueva variable basada en una selección:
+```
+#Solo quiero ver los datos del día 6 al 24
+wild_selection <- wild_weight [3:9]
+
+#Hacer una nueva variable basada en una comparación
+#Queremos saber en qué días el ratón knockdown perdió peso
+comparison_vector<- knockout_weight<0
+
+#Hay que colocar en un vector esos datos:
+weight_loss<- knockout_weight [comparison_vector]
+weight_loss
+```
+---
+### **MATRICES**
+
+Hasta este momento ya hemos conocido como trabajar con elementos unidimensionales en R, pero no es todo lo que podemos hacer, comenzaremos a trabajar con matrices. Una matriz en R se refiere a una colección de elementos con el mismo tipo de datos, arreglados en un determinado número de filas y columnas.
+Tu puedes construir una matriz en R con la función `matrix()`. 
+
+```
+#Construye tu primera matriz
+matrix (1:9, byrow = TRUE, nrow = 3)
+
+#Regresemos a los ratones, vamos a poner en una matriz los siguientes datos
+initial_weight <- c(20.2, 21.3)
+final_weight <- c(24.3, 21.1)
+tumor_volume <- c(50, 450)
+
+#Queremos poner todos esos datos en la matriz, primero lo pondremos dentro de una variable
+parameters <- c(initial_weight, final_weight, tumor_volume)
+matrix_parameters <- matrix(parameters, byrow = TRUE, nrow = 3)
+```
+Así como es importante nombrar las variables, hay que nombrar las matrices:
+```
+#Coloca en un vector los nombres de las distintas condiciones que se encontraran en las filas y columnas
+name_parameters <- c(“Initial weight (g)”, “Final weight (g)”, “Tumor volume (mm3)”)
+condition <- c("Wild_type", “Knockout_CSF1”)
+
+#Nombra las columnas con la condición
+colnames(matrix_parameters) <- condition
+
+#Nombra las filas con los parámetros que medimos
+rownames(matrix_parameters) <- name_parameters
+
+#Muestra como quedo la matriz:
+matrix_parameters
+````
+Días después de sacar el experimento ustedes terminan de cuantificar los valores de la proteína CSF1 por citometría de flujo y WB en los ratónes, ¿Se puede agregar una nueva fila que contenga estos datos en nuestra matriz?, la respuesta es SI, con la función `rbind()`, si quieren agregar columnas es con la función `cbind()`:
+
+Lo primero es hacer la matriz con esos nuevos datos:
+```
+expression_flow <- c(50.5, 10.1)
+expression_wb <- c(120, 23)
+expression_csf <- c(expression_flow, expression_wb)
+matrix_expression <- matrix(expression_csf, nrow =2, byrow =TRUE,
+                                         dimnames = list (c(“IMF_CSF1”, “WB_CSF1” ), 
+                                                          c((“Wild_type”, “Knockdout_CSF1”))
+matrix_protein <- rbind (matrix_parameters, matrix_expression)
+matrix_protein
+```
+Ahora, cómo podemos seleccionar elementos en nuestra matriz, no siempre queremos hacer operaciones con todos datos. Para marcarle una selección a R siempre usamos `[]`, las matrices son bidimensionales, entonces necesitamos saber como decirle que nos seleccione una fila o una columna:
+
+`my_first_matrix[1,]` selecciona todos los elementos de la primera fila
+
+`my_first_matrix[,1]` selecciona todos los elementos de la primera columna
+
+También podemos seleccionar más variables:
+
+`my_first_matrix[1,2]` selecciona los elementos del primer renglón de la segunda columna
+
+`my_first_matrix[5:8, 90:115]` selecciona  los datos de los renglones 5 al 8 y las columnas de la 90 a la 115
+
+A practicar:
+```
+#Selecciona los datos del knockout y colócalo en una variable:
+parameters_knockdown <- matrix_protein [,2]
+
+#Selecciona solo los valores de peso
+parameters_weight <- matrix_protein [1:2]
+
+#¿Cuál es la media de los pesos obtenidos?
+mean(parameters_weight)
+```
+`mean()` no es el único parámetro que puedes analizar, también se pueden sumas columnas o filas con las funciones `colSums()` y `rowSums()`, respectivamente.
+
+---
+### **DATA FRAME**
+
+Como vieron, todos los elementoS que tenia nuestra matriz eran del mismo tipo (númerico), pero que pasa si nosotros queremos poner elementos lógicos o caracteres. Por ejemplo:
+Subtipo de cancer, “luminal o basal” (caracteres)
+Tratamiento , “SI” o “NO” (lógicos)
+
+
+
+
+
+
 
 
 
