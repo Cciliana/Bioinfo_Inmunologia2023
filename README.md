@@ -23,7 +23,7 @@ Para hacer la instalación pueden apoyarse de los siguientes recursos:
 
 La distribución Linux que deben descargar prefrentemente es Ubuntu 22.04.02 LTS. El proceso es el mismo que se indica en el vídeo. Por favor, configuren su usuario para que puedan usar la terminal. **La contraseñan que pongan puede ser vital si después del curso quieren seguir usando Linux.**
 
-También instalen R y Rstudio por favor, de preferencia la versión más reciente y desde el sistema operativo que usen normalmente. Si alguno ya lo tiene instalado no es necesario que actualicen, coserven la versión que tienen actualmente. 
+También instalen R y Rstudio por favor, de preferencia la versión más reciente y desde el sistema operativo que usen normalmente. Si alguno ya lo tiene instalado no es necesario que lo actualicen, conserven la versión que tienen. 
 
 + https://cran.r-project.org/bin/windows/base/
 + https://posit.co/download/rstudio-desktop/
