@@ -11,7 +11,7 @@ Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 
 ---
 
-## **HOLA, POR FAVOR TE SOLICITAMOS QUE LLEGUES A LA *CLASE 1* CON LOS SIGUIENTES PROGRAMAS YA INSTALADOS EN TU COMPU**
+### **HOLA, POR FAVOR TE SOLICITAMOS QUE LLEGUES A LA *CLASE 1* CON LOS SIGUIENTES PROGRAMAS YA INSTALADOS EN TU ORDENADOR**
 
 ### **Instalación de WSL (*Windows Subsystem for Linux*) y del lenguaje de programación R**
 
