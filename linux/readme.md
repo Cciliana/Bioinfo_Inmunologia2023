@@ -303,7 +303,7 @@ Otro tipo de ciclo importante es el *while*, el cual ejecuta una función mientr
 
         $ lscpu
 
-+ Siempre testear nuestros scripts con datos de pruba antes de lanzarlos con los datos reales.
++ Siempre debemos  testear nuestros scripts con datos de prueba antes de lanzarlos con los datos reales.
 
 
 
