@@ -72,7 +72,7 @@ pcaf <- fviz_pca_var(pca, col.var = "cos2",
 
 pcaf
 
-#---- uardar el grafico----
+#---- Guardar el grafico----
 path = "D:/marval_windows/JR_MARVAL/ceci/"
 
 png(filename =paste (path, "pcaf_mediana_MACcoCC.png", sep = ""),
