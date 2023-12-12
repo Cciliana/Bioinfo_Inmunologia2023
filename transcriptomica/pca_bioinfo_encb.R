@@ -67,7 +67,7 @@ cos
 # Combinacion del peso de los componentes y la influencia de las varibles en ellos
 pcaf <- fviz_pca_var(pca, col.var = "cos2",
                      gradient.cols = c("blue", "black", "red"),
-                     repel = T) + ggtitle("Macrófagos entrenados ")
+                     repel = T) + ggtitle("Macrófagos entrenados")
 
 
 pcaf

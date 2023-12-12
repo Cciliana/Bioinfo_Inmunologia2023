@@ -35,7 +35,7 @@ Posteriormente debemos cargar la base de datos que utilizaremos, en este caso se
 
     head(data)
 
-Los datos que estaremos usando responden a la abundancia de transcritos presentes en un conjunto de macrófagos entrenados por un microambiente tumoral de carácter agresivo o no agresivo. Para homogenizar un poco los datos, trabajamos con la mediana de los transcritos por condición experimental. Tras este paso es necesario eliminar aquellas filas donde el valor sea 0,  pues no tiene caso evaluar un gen que no se esta expresando y eventualmente traerá problemas en la manipulación de datos. 
+Los datos que estaremos usando responden a la abundancia de transcritos presentes en un conjunto de macrófagos entrenados por un microambiente tumoral de carácter agresivo o no agresivo. Para homogenizar un poco los datos, trabajamos con la mediana de los transcritos por condición experimental. Tras este paso es necesario eliminar aquellas filas donde el valor sea 0, pues no tiene caso evaluar un gen que no se está expresando y eventualmente traerá problemas en la manipulación de datos. 
 
     # Estructura de datos y busqueda de valores faltantes
     str(data)
@@ -88,3 +88,58 @@ Ahora, usaremos un conjunto de herramientas que nos brindan un análisis fácil 
     pcaf
 
     dev.off()
+
+---
+
+### **Heatmap**
+
+Ahora, para realizar nuestro heatmap, usaremos el archivo: gsva_top20_macs&gmcsf.csv. Este archivo contiene un conjunto de procesos biológicos en términos de Gen Ontology, los cuales se ven alterados en los macrófagos entrenados por un microambiente agresivo o no agresivo. Los valores que vamos a graficar corresponden al valor de enriquecimiento normalizado “NES”. La librería que necesitamos instalar es [pheatmap](https://www.rdocumentation.org/packages/pheatmap/versions/1.0.12/topics/pheatmap). 
+
+    # Instalar y activar libreria 
+    install.packages("pheatmap")
+    library(pheatmap)
+
+Posteriormente debemos cargar la base de datos que utilizaremos, en este caso será el archivo: gsva_top20_macs&gmcsf.csv
+
+    # Cargar datos
+    data <- read.table(file = "gsva_top20_macs&gmcsf.   csv", sep = ",", head=T)
+
+    data
+
+Para que la librería funcione adecuadamente debemos transformar nuestra base de datos que ahora es un DataFrame en una Matriz. Para ello haremos lo siguiente:
+
+    # Reestructurando datos
+    # Transformar dataframe a una matriz
+    rownames(data) <- data[,1]
+    samp2 <- data[,-1]
+    mat_data <- data.matrix(samp2[,1:ncol(samp2)])
+
+Una vez realizado lo anterior, procedemos a generar el gráfico. Aquí solo ilustramos un par de argumentos que ayudan a la construcción de la figura, pero en la [documentación](https://www.rdocumentation.org/packages/pheatmap/versions/1.0.12/topics/pheatmap) de la libería podrás encontrar más argumentos que te ayuden a explicar tus datos de la mejor forma visual posible. 
+
+    pheatmap(mat_data,
+         #main = "Procesos Biológicos en Macrófagos     entrenados",
+         #color= colorRampPalette(c("blue", "black", "red"))(100),
+         color = hcl.colors(50, "Broc"),
+         #color = hcl.colors(50, "OrRd"),
+         fontsize_col = 9,
+         fontsize_row = 9,
+         show_rownames = T,
+         cluster_rows = T,
+         cluster_cols = T,
+         border_color = "black",
+         scale="row", 
+         cellwidth = 30,
+         cellheight = 14,
+         treeheight_col = 30)
+
+**Ejercicio:**
+
+Te pedimos que generes un PCA o Heatmap  de tus datos y nos brindes una pequeña interpretación de los mismos.  
+
+
+**Nota:**
+
+**La verdad es que estas sesiones tienen la intención de acercalos un poco a la bionformática, si bien requiere paciencia y empeño durante su aprendizaje, es una herramienta muy poderosa capaz de enriquecer sus investigaciones.**
+
+
+

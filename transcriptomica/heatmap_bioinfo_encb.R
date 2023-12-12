@@ -29,7 +29,7 @@ mat_data <- data.matrix(samp2[,1:ncol(samp2)])
 
 pheatmap(mat_data,
          #main = "Procesos Biológicos en Macrófagos entrenados",
-         #color= colorRampPalette(c("blue", "white", "yellow"))(100),
+         #color= colorRampPalette(c("blue", "black", "red"))(100),
          color = hcl.colors(50, "Broc"),
          #color = hcl.colors(50, "OrRd"),
          fontsize_col = 9,
