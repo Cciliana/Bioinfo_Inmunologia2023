@@ -29,7 +29,7 @@ Posteriormente debemos cargar la base de datos que utilizaremos:
     setwd("D:/marval_windows/JR_MARVAL/ceci") 
     list.files()
 
-    data <- read.table(file =                "expresion_normalizada_mediana_GMCSF_vs_MACcoCC.csv",sep = ",", head=T, row.names = 1)
+    data <- read.table(file="expresion_normalizada_mediana_GMCSF_vs_MACcoCC.csv",sep = ",", head=T, row.names = 1)
 
     head(data)
 
