@@ -134,7 +134,7 @@ Una vez realizado lo anterior, procedemos a generar el gráfico. Aquí solo ilus
 
 **Ejercicio:**
 
-Te pedimos que generes un PCA o Heatmap  de tus datos y nos brindes una pequeña interpretación de los mismos.  
+Te pedimos que generes un PCA o un Heatmap  de tus datos y nos brindes una pequeña interpretación del resultado.  
 
 
 **Nota:**

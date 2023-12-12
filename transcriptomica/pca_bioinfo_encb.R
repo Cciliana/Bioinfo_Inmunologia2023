@@ -41,7 +41,7 @@ colnames(data)
 
 
 # Matriz de correlacion
-corr_matrix <- cor(data_mac)
+corr_matrix <- cor(data)
 ggcorrplot(corr_matrix)
 
 # PCA
