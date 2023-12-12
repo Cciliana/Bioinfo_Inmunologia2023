@@ -1,0 +1,41 @@
+﻿Biological Process,MCF7,T47D,UIVC1,MDA_MB_231,UIVC4,GM_CSF
+immunological memory process,2.168253626,2.07317005,1.76910328,0,1.900786584,0
+positive regulation of memory T cell differentiation,2.218516442,2.152556333,1.561283013,0,1.900786584,0
+myeloid dendritic cell antigen processing and presentation,2.17564793,2.152556333,1.561283013,0,1.900786584,0
+antigen processing and presentation of endogenous peptide antigen via MHC class II,2.17564793,2.152556333,1.561283013,0,1.900786584,0
+"positive regulation of CD4-positive, alpha-beta T cell differentiation",1.96630361,1.955555624,0,0,1.900786584,1.590572612
+positive regulation of alpha-beta T cell activation,1.571592632,1.693214124,0,0,1.900786584,2.144105278
+positive regulation of alpha-beta T cell differentiation,1.769892639,1.63224066,0,0,1.900786584,1.818444773
+memory T cell differentiation,2.218516442,2.152556333,0,0,1.900786584,0
+regulation of memory T cell differentiation,2.218516442,2.152556333,0,0,1.900786584,0
+immunological memory formation process,2.218516442,2.152556333,0,0,1.900786584,0
+MHC protein complex assembly,2.233338969,0,0,0,1.900786584,2.047893885
+MHC class II protein complex assembly,2.233338969,0,0,0,1.900786584,2.047893885
+peptide antigen assembly with MHC protein complex,2.233338969,0,0,0,1.900786584,2.047893885
+peptide antigen assembly with MHC class II protein complex,2.233338969,0,0,0,1.900786584,2.047893885
+immunoglobulin production involved in immunoglobulin-mediated immune response,2.18726964,0,0,0,2.000807458,1.99082487
+immunoglobulin production,1.820206451,0,0,0,2.000807458,2.249298342
+dendritic cell antigen processing and presentation,2.2544398,2.271602008,0,0,0,1.544226301
+"positive regulation of CD4-positive, alpha-beta T cell activation",1.923862103,1.955555624,0,0,1.900786584,0
+"CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation",1.96630361,1.910579804,0,0,1.900786584,0
+"regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation",1.96630361,1.910579804,0,0,1.900786584,0
+positive regulation of cell communication,-1.608390514,-1.410553251,-1.437788437,-1.980402945,0,-1.516288478
+cytokine-mediated signaling pathway,-2.077348034,-1.953624714,-1.843320947,-2.334456773,-2.054202948,2.294374876
+granulocyte migration,-1.849044508,-1.955872627,-1.882755099,-2.199909186,-2.029313498,1.898857411
+granulocyte chemotaxis,-1.845928859,-1.952985652,-1.918923648,-2.205477236,-2.043915364,1.869987084
+positive regulation of ERK1 and ERK2 cascade,-1.649431201,-1.65441163,-1.564823765,-1.91140193,-1.58153039,0
+neutrophil migration,-1.921599879,-1.995333992,-1.918485785,-2.256236323,-2.029313498,1.676805606
+neutrophil chemotaxis,-1.916756258,-1.985823505,-1.948570998,-2.262927143,-2.043915364,1.677124567
+cell-cell signaling,-1.739407763,-1.403098581,-1.713765463,-1.842500001,-1.784110892,0
+positive regulation of GTPase activity,-1.696527508,-1.714257409,-1.545318521,-1.886530652,-1.755984026,0
+ERK1 and ERK2 cascade,-1.731672637,-1.736577471,-1.661924516,-1.894750381,0,-1.598977942
+response to tumor necrosis factor,-1.551168028,-1.672136665,-1.568589928,-1.944967954,-1.942277758,0
+cellular response to tumor necrosis factor,-1.561433438,-1.662382212,-1.549924265,-1.98883843,-2.067281515,0
+antimicrobial humoral immune response mediated by antimicrobial peptide,-1.791561848,-1.858053894,-1.85353886,-1.818392912,-1.50921993,0
+response to interleukin-1,-1.662314622,-1.673451978,-1.53991943,-2.056588582,-1.96308694,0
+cellular response to interleukin-1,-1.667092861,-1.666919058,-1.55215904,-2.065522136,-2.00528489,0
+lymphocyte chemotaxis,-1.710243708,-1.867575531,-1.746181789,-1.897157306,-1.830522784,0
+regulation of ERK1 and ERK2 cascade,-1.747384264,-1.736530219,-1.662419067,-1.926465921,-1.502332006,-1.606246037
+chemokine-mediated signaling pathway,-1.958234846,-2.000482296,-2.045341712,-2.253401987,-2.098295418,0
+response to chemokine,-2.003133836,-2.011932313,-2.027166323,-2.253401987,-2.098295418,0
+cellular response to chemokine,-2.003133836,-2.011932313,-2.027166323,-2.253401987,-2.098295418,0
