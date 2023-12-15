@@ -7,7 +7,7 @@ Dra. Mayra Cecilia Suaréz Arriaga: mostancmayra@hotmail.com
 
 Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 
-**Nota:** contesten el siguiente cuestinario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
+**Nota:** contesten el siguiente cuestionario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
 
 ---
 
