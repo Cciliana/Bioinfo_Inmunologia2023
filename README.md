@@ -28,3 +28,27 @@ También instalen R y Rstudio por favor, de preferencia la versión más recient
 + https://posit.co/download/rstudio-desktop/
 
 No duden en contactarnos si tienen alguna duda o problema de instalación. Es importante que tengan instalado progrmas para el día de la clase, por favor. El tiempo es corto así que tratemos de aprovecharlo.
+
+---
+
+# **Para seguir aprendiendo**
+
+Chicos aquí le dejamos una serie de recursos que los pueden ayduar en este proceso de aprendizaje (muchos de ellos son gratuitos).
+
++ EMBL's European Bioinformatics Institute: https://www.ebi.ac.uk/
+
++ Build data and AI skills: https://www.datacamp.com/
+
++ Plataforma de apoyo y educación en  bionformática: https://atgenomics.com/
+
++ Escuela de bioinformática: https://www.wintergenomics.com/ 
+
++ Para aprender más sobre Linux y lenguajes de programación: https://www.netacad.com/
+
++ Ejercicios de programacíon: https://www.codewars.com/
+
++ Cursos sobre bionformática: https://www.futurelearn.com/
+
++ Cursos de bionformática o cualquier tema: https://www.coursera.org/courseraplus?utm_medium=sem&utm_source=gg&utm_campaign=B2C_LATAM__coursera_FTCOF_courseraplus&campaignid=20529999299&adgroupid=156273524587&device=c&keyword=&matchtype=&network=g&devicemodel=&adposition=&creativeid=673242178277&hide_mobile_promo&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-dEtXbKQJbovDipnRUwKCWP9VpjT-c0vDYbbwSqOwAev8dg6FVqjIaApspEALw_wcB
+
+ 
