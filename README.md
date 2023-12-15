@@ -33,7 +33,8 @@ No duden en contactarnos si tienen alguna duda o problema de instalación. Es im
 
 # **Para seguir aprendiendo**
 
-Chicos aquí le dejamos una serie de recursos que los pueden ayduar en este proceso de aprendizaje (muchos de ellos son gratuitos).
+Chicos, aquí les dejamos una serie de recursos 
+que les pueden resultar útiles para seguir en este proceso de aprendizaje (muchos de ellos son gratuitos).
 
 + EMBL's European Bioinformatics Institute: https://www.ebi.ac.uk/
 
