@@ -10,6 +10,7 @@ Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 **Nota:** contesten el siguiente cuestionario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
 
 ---
+**¡Por favor, es muy importante que tengas instalados los siguientes programas para el primer día de clases!. El tiempo es corto así que tratemos de aprovecharlo.**
 
 ### **Instalación de WSL (*Windows Subsystem for Linux*) y del lenguaje de programación R**
 
@@ -22,10 +23,11 @@ Para hacer la instalación pueden apoyarse de los siguientes recursos:
 
 La distribución Linux que deben descargar prefrentemente es Ubuntu 22.04.02 LTS. El proceso es el mismo que se indica en el vídeo. Por favor, configuren su usuario para que puedan usar la terminal. **La contraseñan que pongan puede ser vital si después del curso quieren seguir usando Linux.**
 
-También instalen R y Rstudio por favor, de preferencia la versión más reciente y desde el sistema operativo que usen normalmente. Si alguno ya lo tiene instalado no es necesario que actualicen, coserven la versión que tienen actualmente. 
+También instalen R y Rstudio por favor, de preferencia la versión más reciente y desde el sistema operativo que usen normalmente. Si alguno ya lo tiene instalado no es necesario que lo actualicen, conserven la versión que tienen. 
 
 + https://cran.r-project.org/bin/windows/base/
 + https://posit.co/download/rstudio-desktop/
+
 
 No duden en contactarnos si tienen alguna duda o problema de instalación. Es importante que tengan instalados los programas para el día de la clase, por favor. El tiempo es corto así que tratemos de aprovecharlo.
 
@@ -51,3 +53,6 @@ que les pueden resultar útiles para seguir en este proceso de aprendizaje (much
 + Cursos sobre bionformática: https://www.futurelearn.com/
 
 + Cursos de bionformática o cualquier tema: https://www.coursera.org/courseraplus?utm_medium=sem&utm_source=gg&utm_campaign=B2C_LATAM__coursera_FTCOF_courseraplus&campaignid=20529999299&adgroupid=156273524587&device=c&keyword=&matchtype=&network=g&devicemodel=&adposition=&creativeid=673242178277&hide_mobile_promo&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-dEtXbKQJbovDipnRUwKCWP9VpjT-c0vDYbbwSqOwAev8dg6FVqjIaApspEALw_wcB
+
+No duden en contactarnos si tienen alguna duda o problema de instalación. 
+
