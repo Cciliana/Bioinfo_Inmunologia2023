@@ -27,7 +27,7 @@ También instalen R y Rstudio por favor, de preferencia la versión más recient
 + https://cran.r-project.org/bin/windows/base/
 + https://posit.co/download/rstudio-desktop/
 
-No duden en contactarnos si tienen alguna duda o problema de instalación. Es importante que tengan instalado progrmas para el día de la clase, por favor. El tiempo es corto así que tratemos de aprovecharlo.
+No duden en contactarnos si tienen alguna duda o problema de instalación. Es importante que tengan instalados los programas para el día de la clase, por favor. El tiempo es corto así que tratemos de aprovecharlo.
 
 ---
 
@@ -51,5 +51,3 @@ que les pueden resultar útiles para seguir en este proceso de aprendizaje (much
 + Cursos sobre bionformática: https://www.futurelearn.com/
 
 + Cursos de bionformática o cualquier tema: https://www.coursera.org/courseraplus?utm_medium=sem&utm_source=gg&utm_campaign=B2C_LATAM__coursera_FTCOF_courseraplus&campaignid=20529999299&adgroupid=156273524587&device=c&keyword=&matchtype=&network=g&devicemodel=&adposition=&creativeid=673242178277&hide_mobile_promo&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-dEtXbKQJbovDipnRUwKCWP9VpjT-c0vDYbbwSqOwAev8dg6FVqjIaApspEALw_wcB
-
- 
