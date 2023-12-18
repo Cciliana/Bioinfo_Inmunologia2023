@@ -7,7 +7,7 @@ Dra. Mayra Cecilia Suaréz Arriaga: mostancmayra@hotmail.com
 
 Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 
-**Nota:** contesten el siguiente cuestinario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
+**Nota:** contesten el siguiente cuestionario previo al curso, por favor: https://forms.gle/jNUUrbzfoTgovZoV7
 
 ---
 **¡Por favor, es muy importante que tengas instalados los siguientes programas para el primer día de clases!. El tiempo es corto así que tratemos de aprovecharlo.**
@@ -28,4 +28,31 @@ También instalen R y Rstudio por favor, de preferencia la versión más recient
 + https://cran.r-project.org/bin/windows/base/
 + https://posit.co/download/rstudio-desktop/
 
+
+No duden en contactarnos si tienen alguna duda o problema de instalación. Es importante que tengan instalados los programas para el día de la clase, por favor. El tiempo es corto así que tratemos de aprovecharlo.
+
+---
+
+# **Para seguir aprendiendo**
+
+Chicos, aquí les dejamos una serie de recursos 
+que les pueden resultar útiles para seguir en este proceso de aprendizaje (muchos de ellos son gratuitos).
+
++ EMBL's European Bioinformatics Institute: https://www.ebi.ac.uk/
+
++ Build data and AI skills: https://www.datacamp.com/
+
++ Plataforma de apoyo y educación en  bionformática: https://atgenomics.com/
+
++ Escuela de bioinformática: https://www.wintergenomics.com/ 
+
++ Para aprender más sobre Linux y lenguajes de programación: https://www.netacad.com/
+
++ Ejercicios de programacíon: https://www.codewars.com/
+
++ Cursos sobre bionformática: https://www.futurelearn.com/
+
++ Cursos de bionformática o cualquier tema: https://www.coursera.org/courseraplus?utm_medium=sem&utm_source=gg&utm_campaign=B2C_LATAM__coursera_FTCOF_courseraplus&campaignid=20529999299&adgroupid=156273524587&device=c&keyword=&matchtype=&network=g&devicemodel=&adposition=&creativeid=673242178277&hide_mobile_promo&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-dEtXbKQJbovDipnRUwKCWP9VpjT-c0vDYbbwSqOwAev8dg6FVqjIaApspEALw_wcB
+
 No duden en contactarnos si tienen alguna duda o problema de instalación. 
+
