@@ -325,7 +325,8 @@ Otro tipo de ciclo importante es el *while*, el cual ejecuta una función mientr
 ## **Dudas y comentarios**
 **¿Linux es importante?**
 
-![¿Linux es importante?](Bioinfo_Inmunologia2023/linux/linux.jpg "¿Linux es importante?")
+![¿Linux es importante?](linux.jpg "¿Linux es importante?")
+
 
 
 
