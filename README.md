@@ -13,14 +13,14 @@ Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 
 ### **Instalación de WSL (*Windows Subsystem for Linux*) y del lenguaje de programación R**
 
-No pretendemos que se vuelvan expertos en Linux hoy, pero si nos gustaría que se lleven una noción de como desenvolverse en un entorno con este SO. Para ello haremos uso de la terminal Linux con una distribución Ubuntu, si tienes Mac, no te precupes en esencia es lo mismo.  Lo más seguro es que tengas Windows y si es el 10 u 11 ya la hicimos, solo deberás instalar WLS (Windows Subsystem for Linux) para poder ejecutar el Kernel de Linux en tu equipo Windows (bendito sea el Sr). 
+No pretendemos que se vuelvan expertos en Linux hoy, pero si nos gustaría que se lleven una noción de como desenvolverse en un entorno con este sistema operativo. Para ello haremos uso de la terminal Linux con una distribución Ubuntu. Si tienes Mac, no te precupes, en esencia es lo mismo.  Lo más seguro es que tengas Windows y si es el 10 u 11 ya la hicimos, solo deberás instalar WLS (Windows Subsystem for Linux) para poder ejecutar el Kernel de Linux en tu equipo Windows (bendito sea el Sr). 
 
 Para hacer la instalación pueden apoyarse de los siguientes recursos:
 
 + https://learn.microsoft.com/en-us/windows/wsl/install
 + https://youtu.be/0NoFjH1zWSE?si=fo5rje6juU55fCM0
 
-La distribución Linux que deben descargar prefrentemente es Ubuntu 22.04.02 LTS. El proceso es el mismo que se indica en el vídeo. Por favor, configuren su usuario para que puedan usar la terminal. **La contraseñan que pongan puede ser vital si después del curso quieren seguir usando Linux.**
+La distribución Linux que deben descargar prefrentemente es Ubuntu 24.04 LTS. El proceso es el mismo que se indica en el vídeo. Por favor, configuren su usuario para que puedan usar la terminal. **La contraseña que pongan puede será vital si después del curso quieren seguir usando Linux.**
 
 También instalen R y Rstudio por favor, de preferencia la versión más reciente y desde el sistema operativo que usen normalmente. Si alguno ya lo tiene instalado no es necesario que lo actualicen, conserven la versión que tienen. 
 

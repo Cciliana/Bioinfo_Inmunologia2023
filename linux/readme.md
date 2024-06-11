@@ -4,25 +4,29 @@
 
 Hola, Mundo.
 
-Hoy hablaremos un poquito sobre **Linux** pero de una forma simple pero efectiva.
+Hoy hablaremos un poquito sobre **Linux**, de una forma simple pero efectiva.
 
-Linux es un *Kernel*, es decir, es el "núcleo" de un sistema operativo (SO) y es quien regula los recursos de una computadora, la interraccion Software-Hardaware. El kernel de Linux es de código abierto, lo que significa que su código fuente está disponible para ser modificado, mejorado y adaptado a diferentes dispositivos y necesidades.
+Linux es un *Kernel*, es decir, es el "núcleo" de un sistema operativo (SO) y es quien regula los recursos de una computadora, la interraccion software-hardaware. El kernel de Linux es de código abierto, lo que significa que su código fuente está disponible para ser modificado, mejorado y adaptado a diferentes dispositivos y necesidades.
 
 Si bien estrictamente el verdadero sistema operativo es GNU/Linux, se entiende que **Linux** es un sistema operativo. La acotación importante deberá ser ¿de cuál distribución de Linux estamos hablando? Linux existe en distintas versiones diseñadas para fines diferentes y por ende su funcionamiento puede variar entre distribuciones pese a tener una base común. Este punto común es el sistema operativo UNIX de AT&T, el mismo de Mac OS. Por ende, mucho de lo que se hace en Linux se puede hacer con Mac, lo complejo viene cuando quremos trabajar con Windows. :( 
 
-Si bien Windows es el SO más popular en el mundo, especialmente en equipos personales de compúto, la realidad es que nivel industria Linux tiene mayor representatividad. La mayoría de los servidores en el mundo usan Linux, como los de Google, Amazon, Facebook, NASA e incluso Netflix. 
+Si bien Windows es el SO más popular en el mundo, especialmente en equipos personales de compúto, la realidad es que nivel industria Linux tiene mayor presencia en el mercado. La mayoría de los servidores en el mundo usan Linux, como los de Google, Amazon, Facebook, NASA e incluso Netflix. 
 
 Para nosotros resulta importante conocer y manejar aunque sea de una forma básica este sistema... si en algún momento trabajamos con datos de secuenciación masiva, simulación de sistemas complejos, modelado 3D o cualquier tarea que requeira grandes recursos computacionales nuestra computadora personal seguramente quedará corta. En este escenario necesitaremos conectarnos a un *cluster* o a una *workstation* y los más seguro es que su SO sea Linux. Además, muchas de las herramientas computacionales empleadas en las ciencias omicas están implementadas en Linux. 
 
 Una de las características de Linux es el uso de la terminal. Aunque el SO  tiene un interfaza gráfica como cualquier otro, realmente Linux se trabaja a través de línea de comandos, en especial porque cuando nos conectamos a un servidor o computadora Linux, no tenemos acceso o no existe la interfaz gráfica. Una de las ventajas de la terminal es que consume mucho menos recursos que la interfaz gráfica, lo cual optimiza los procesos. 
 
+![Sistema Operativo Linux](/home/jrmarval/marval/Bioinfo_Inmunologia2023/linux/k_linux.png "SO Linux")
+
 ----
 
 ### **Trabajando en la terminal:**
 
-Nota: las salidas que verán son un ejemplo, corresponden a mi equipo y por ende tú tendrás una distinta en comandos que dependen del contexto de la computadora. En esta guía los camandos a ejecutar los verás en una especie de caja y podrás copiarlos y peharlos directamente en tu computadora. Además, la salida se representa después del signo ">" a manera de ejemplo. Tú verás la salida en tu terminal. 
+Nota: las salidas que verán son un ejemplo, corresponden a mi equipo y por ende tú tendrás una distinta en comandos que dependen del contexto de la computadora. En esta guía los camandos a ejecutar los verás en una especie de caja, podrás copiarlos y pegarlos directamente en tu computadora. Además, la salida se representa después del signo ">" a manera de ejemplo. Tú verás la salida en tu terminal. 
 
-Lo que nos importa es que cuando se enfrenten a un sistema Linux se sientan confiados. Para ello veremos como movernos en la terminal, generar archivos, ejecutar script's y algunos otros tips que les podamos brindar. La terminal funciona a través de comandos. La estructura básica de un comando es la siguiente: 
+Lo que nos importa es que cuando se enfrenten a un sistema Linux se sientan confiados. Para ello veremos como movernos en la terminal, generar archivos, ejecutar script's y algunos otros tips que les podamos brindar. 
+
+**Lo primero que deben saber es lo siguiente: a terminal funciona a través de comandos. La estructura básica de un comando es la siguiente:** 
 
     comando [opciones] [argumentos]
 
@@ -57,7 +61,7 @@ Cuando corran este comando no verán alguna salida pero el directorio ya fue gen
 
 Como vemos nuestro directorio **curso_bioinfo** fue creado. Ahora para movernos entre directorios usamos el comando *cd*. Veremos que el prompt muestra el nombre del directorio actual de trabajo.
 
-    cd curso_bioinfo_inm_encb
+    cd curso_bioinfo
 ---
     > [jrmarval@LAPTOP-8SI0DC1R:~/marval/curso_bioinfo$]
 
@@ -85,7 +89,7 @@ Ahora que estamos dentro de nuestro directorio de trabajo sería bueno crear un 
 
 Lo anterior abre una ventana en la que podemos escribir todo lo que nos podamos imaginar. Para visualizarlos de una forma sencilla usamos el comando *less*.
 
-Es importante cuidar la extensión del archivo, pues esto determina las características del mismo. Podemos tener un archivo de texto (txt), algún script ejecutable para Bash (.sh) o Python (.py). Muchas veces no es necesario indicar la extensión, pero hacerlo es una buena práctica para identificar el tipo de archivos con mayor facilidad, así que tratemos de hacerlo siempre. 
+Es importante cuidar la extensión del archivo, pues esto determina las características del mismo. Podemos tener un archivo de texto plano (txt), algún script ejecutable para Bash (.sh) o Python (.py). Muchas veces no es necesario indicar la extensión, pero hacerlo es una buena práctica para identificar el tipo de archivos con mayor facilidad, así que tratemos de hacerlo siempre. 
 
 Una parte importante del crear algo es tener la capacidad de poderlo borrar y para ello tenemos el comando *rm*.
 
@@ -93,7 +97,7 @@ Una parte importante del crear algo es tener la capacidad de poderlo borrar y pa
 
 Para eliminar un directorio con los elementos que estén en el, debemos hacerlo agregando una opción al comando anterior.
 
-    rm -r curso_bioinfo_inm_encb
+    rm -r curso_bioinfo
 
 Imagina que tienes 10 archivos, 5 con la terminación txt y otros 5 con csv. Y quieres eliminar únicamente los .txt ¿Cómo lo harías?
 
@@ -105,8 +109,6 @@ Otra función importante y que nos ayudará a proteger nuestra información es r
 
     cp file1.txt /direcorio_destino
 
-Debemos tener cuidado de copiar archivos con nombres idénticos a algún otro archivo en el directorio destino pues esto sobreescribirá la información del archivo residente y podríamos perder la información original. 
-
 Pero si lo que queremos es solo cambiar la ubicación de un archivo empleamos el comando *mv*:
 
     mv file1.txt curso_bioinfo
@@ -114,6 +116,8 @@ Pero si lo que queremos es solo cambiar la ubicación de un archivo empleamos el
 Este comando también sirve para cambiar el nombre de un archivo, en este caso en lugar de indicar la ruta destino deberemos indicar el nuevo nombre del archivo:
 
     mv file1.txt new_file1.txt
+
+Debemos tener cuidado de copiar o mover archivos archivos con nombres idénticos a algún otro archivo en el directorio destino, pues esto sobreescribirá la información del archivo residente y podríamos perder la información original. 
 
 Para tener más claro la idea de sobrescribir un archivo en Linux hagamos lo siguiente. Escribe "Hola" en un archivo test.txt.
 
@@ -133,7 +137,7 @@ Ahora escribe:
 ---
 #### **Script**
 
-Como habrás notado puedes hacer tareas directamente en la terminal pero cuando tengas una tarea mayor y repetitiva frente a ti no es tan buena idea introducir el comando *n* cantidad de veces, esperando a que termine un proceso para ingresar el siguiente comando. Podemos hacer que la computadora trabaje para nosotros al unificar la secuencia de comandos, lanzarlos e irnos a casa.  
+Como habrás notado puedes hacer tareas directamente en la terminal pero cuando tengas una tarea mayor y repetitiva frente a ti no es tan buena idea introducir el comando *n* cantidad de veces, esperando a que termine un proceso para ingresar el siguiente comando. Podemos hacer que la computadora trabaje para nosotros al unificar la secuencia de comandos y ejecutarlos al mismo tiempo. Así podríamos irnos a casa mientras la computadora trabaja.   
 
 Automatizar un proceso es posible gracias a los **scripts**, un archivo ejecutable por un lenguaje de programación como R, Python o Bash. En el caso de Linux el empleado por el SO es Bash, si quieres saber que interprete de Shell (comandos por terminal) tiene tu equipo simplemente ejecuta:
 
@@ -155,7 +159,7 @@ Para ejecutar el el script:
 
 **¿Cuál es el resultado? ¿El script funcionó? ¿Tiene idea de que pasó? ¿Comó defines $USER?**
 
-Recordemos que Linux es un sistema multiusuario, es decir, varias personas pueden estar trabajando en él al mismo tiempo por lo que la gestión de recursos y de archivos es un aspecto clave. Para resolver esto, hay todo un sistema de permisos que te permiten realizar ciertas tareas. Veamos esto de forma práctica ejecutando:
+Recordemos que Linux es un sistema multiusuario, es decir, varias personas pueden estar trabajando en él al mismo tiempo por lo que la gestión de recursos y de permisos es un aspecto clave. Para resolver esto, hay todo un sistema de permisos que te permiten realizar ciertas tareas. Veamos esto de forma práctica ejecutando:
 
     ls -lh
 ---
@@ -190,11 +194,11 @@ Por ejemplo, si queremos que un script tenga todos los permisos para todos los u
 
     -rwxrwxrwx  1 jrmarval jrmarval   67 Nov 15 11:32 time.sh
 
-Ahora tú modifica los permisos necesarios para ejecutar el archivo mi_primer_script.sh y verifica que los permisos hayan cambiado. Una vez hecho esto, ejecuta el script.
+Ahora, modifica los permisos necesarios para que solo tú (propietario) puedas ejecutar el archivo mi_primer_script.sh y verifica que los permisos hayan cambiado. Una vez hecho esto, ejecuta el script.
 
     ./mi_primer_script.sh
 
-¿Qué será $USER? Se trata de una variable de entorno GLOBAL que contiene el usuario del sistema. El punto importante aquí es que podemos declarar variables (contenedor de información) en Linux para mejorar nuestros programas. Editando un poco nuestro script:
+¿Qué será $USER? Se trata de una variable de entorno GLOBAL que contiene el usuario del sistema. El punto importante aquí es que podemos declarar variables (un contenedor de información) en Linux para mejorar nuestros programas. Editando un poco nuestro script:
 
     #!/bin/bash
     echo "Hola, $1"
@@ -205,11 +209,11 @@ Ahora tú modifica los permisos necesarios para ejecutar el archivo mi_primer_sc
 ---
     > Hola, tu_nombre
 
-Ahora si quieres saber cuánto tiempo tarda en ejecutarse tu script puedes correr:
+Ahora si quieres saber cuánto tiempo tardó en ejecutarse tu script puedes correr:
 
-    $ time ./mi_primer_script.sh 
+    time ./mi_primer_script.sh 
 
-Con este ejemplo no verás muchas diferencias porque el proceso es muy rápido, pero en tareas que toman mucho tiempo, saber cuánto tarda en ejecutarse un proceso es muy útil para optimizar nuestro trabajo (por ejemplo, el ensamble de secuencias de RNASeq o Genoma podría demorar una semana, esto también depende de los recursos computacionales con los que cuentes). Veamos el siguiente script:
+Con este ejemplo no verás muchas diferencias porque el proceso es muy rápido, pero en tareas que toman mucho tiempo, saber cuánto tarda en ejecutarse un proceso es muy útil para optimizar nuestro trabajo (por ejemplo, el ensamble de secuencias de RNASeq o Genoma podría demorar mucho tiempo. Esto también depende de los recursos computacionales con los que cuentes). Veamos el siguiente script:
 
     #!/bin/bash 
     # Obtener la fecha actual
@@ -222,6 +226,7 @@ Con este ejemplo no verás muchas diferencias porque el proceso es muy rápido, 
     echo Oye $1, el proceso ha terminado $DATE
 
 ¿Qué hace y cómo se comporta este script?
+
 Cuando lanzamos un proceso que toma tiempo la terminal queda "secuestrada", lo cual es un impedimento para seguir trabajando. Para ello podemos lanzar el script en segundo plano:
 
     nohup ./mi_primer_scrip.sh Raul &
@@ -243,13 +248,13 @@ Finalmente, veremos los *loops/ciclos/bucles* una manera de optimizar nuestros p
 El primero ciclo que veremos será el *for*,  este realiza una tarea para una variable en un conjunto de elementos. 
 
     #!/bin/bash
-    for i in 1 2 3 4 5 do
+    for i in 1 2 3 4 5; do
     echo "Hello $i"
-    done  
+    done
 
 ---
 
-     #!/bin/bash
+    #!/bin/bash
     # Ciclo for que imprime los números del 1 al $1
     for ((i = 1; i <= $1; i++)); do
         echo "Número: $i"
@@ -263,7 +268,7 @@ El primero ciclo que veremos será el *for*,  este realiza una tarea para una va
         echo He trabajado con el archivo = $i
     done
 
-También existen ciclos condicionales, es decir, que se realicen una tarea depende que se cumpla alguna condición y en caso de no hacerlo se realiza otra tarea. Por ejemplo: 
+También existen ciclos condicionales, es decir, que se realizan solo si se cumple con una condición y en caso de no hacerlo se realiza otra tarea. Por ejemplo: 
 
     #!/bin/bash
 
@@ -294,7 +299,7 @@ Otro tipo de ciclo importante es el *while*, el cual ejecuta una función mientr
 
 ### **Ejercicio:** 
 
-1. Crea una carpeta llamada loop_for; coloca una imagen en ella y ponle el nombre que tú quieras. Ahora deberás generar esa imagen 5 veces usando el nombre que le diste como prefijo, seguida de un número (1-5) para distinguir cada imagen. Después deberás ponerlas en un fichero llamado new_name, pero ahora las imágenes llevaran el prefijo "figura" seguido del número que le corresponde. Realiza un script para esto y entre más automatizado se encuentre: muchísimo mejor. 
+1. Crea una carpeta llamada loop_for; coloca una imagen en ella y ponle el nombre que tú quieras. Ahora deberás generar esa imagen 5 veces usando el nombre que le diste como prefijo, seguida de un número (1-5) para distinguir cada imagen. Después deberás ponerlas en un fichero llamado new_name, pero ahora las imágenes llevaran el prefijo "figura" seguido del número que le corresponde. Realiza un script para esto y entre más automatizado se encuentre muchísimo mejor. 
 
 2. Escribe un script que realice la tarea que tú quieras pero deberás emplear un ciclo *if* y/o *while*.
 
@@ -315,7 +320,12 @@ Otro tipo de ciclo importante es el *while*, el cual ejecuta una función mientr
 
         lscpu
 
-+ Siempre debemos  testear nuestros scripts con datos de prueba antes de lanzarlos con los datos reales.
++ Siempre debemos  testear nuestros scripts con datos de prueba antes de ejecutarlos con datos reales.
+
+## **Dudas y comentarios**
+**¿Linux es importante?**
+
+![¿Linux es importante?](/home/jrmarval/marval/Bioinfo_Inmunologia2023/linux/linux.jpg "¿Linux es importante?")
 
 
 
