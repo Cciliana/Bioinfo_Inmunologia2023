@@ -7,7 +7,7 @@ Dra. Mayra Cecilia Suaréz Arriaga: mostancmayra@hotmail.com
 
 Biol. Exp. Jhonatan Raúl Martínez Valderrama: jhonatanraulm@gmail.com
 
-**Nota:** contesten el siguiente [cuestionario](https://forms.gle/5twWJyDyJK3EKtr4A) previo al curso, por favor.
+## **Nota:** contesten el siguiente [cuestionario](https://forms.gle/5twWJyDyJK3EKtr4A) previo al curso, por favor.
 
 ---
 **¡Por favor, es muy importante que tengas instalados los siguientes programas para el primer día de clases!. El tiempo es corto así que tratemos de aprovecharlo.**
