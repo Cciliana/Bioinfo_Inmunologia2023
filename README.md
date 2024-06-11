@@ -1,4 +1,4 @@
-# **Introducción a la bionformática**
+# **Introducción a la bioinformática**
 En este repositorio encontrarán el material de apoyo de las sesiones. Durante este curso trabajaremos con el sistema operativo Linux y el lenguaje de programación R. 
 
 ### **Contacto:**
