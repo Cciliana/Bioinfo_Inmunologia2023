@@ -16,7 +16,7 @@ Para nosotros resulta importante conocer y manejar aunque sea de una forma bási
 
 Una de las características de Linux es el uso de la terminal. Aunque el SO  tiene un interfaza gráfica como cualquier otro, realmente Linux se trabaja a través de línea de comandos, en especial porque cuando nos conectamos a un servidor o computadora Linux, no tenemos acceso o no existe la interfaz gráfica. Una de las ventajas de la terminal es que consume mucho menos recursos que la interfaz gráfica, lo cual optimiza los procesos. 
 
-![Sistema Operativo Linux](/home/jrmarval/marval/Bioinfo_Inmunologia2023/linux/k_linux.png "SO Linux")
+![¿Linux es importante?](k_linux.png "¿Linux es importante?")
 
 ----
 
@@ -242,6 +242,10 @@ Cuando lanzamos un proceso que toma tiempo la terminal queda "secuestrada", lo c
     ps aux | grep <PID>
 
 Para ver todos los procesos de la computadora usamos el comando *top*.
+Así como tenemos la capacidad de ejecutar procesos, también podemos deternerlos. Para ello requerimos conocer su PID y ejecutar el siguiente comando:
+
+    kill -9 <PID>
+
 
 Finalmente, veremos los *loops/ciclos/bucles* una manera de optimizar nuestros procesos, son una declaración de iteración lo cual esto es realmente útil para tareas repetitivas. 
 
