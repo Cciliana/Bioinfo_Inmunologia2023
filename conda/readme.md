@@ -1,14 +1,14 @@
 # Anaconda/Conda
 
-Conda es un sotfware enfocado en la gestión de paquetes para evitar incompatibilidades, crea una especie de burbuja para instalar una serie de programas sin causar problemas entre ellos (eso es lo ideal). Esto muy útil porque los programas se valen de *dependencias* para trabajar, es decir, necesitan de otros programas para poder funcionar y en ocasiones hay algunos que no se llevan bien, o que las versiones  ya no son comptibles... todo este tipo de problemas lo soluciona [Conda](https://docs.conda.io/en/latest/) en la mayoría de los casos.
+Conda es un sotfware enfocado en la gestión de paquetes para evitar incompatibilidades, crea una especie de burbuja para instalar una serie de programas sin causar problemas entre ellos (eso es lo ideal). Esto muy útil porque los programas se valen de *dependencias* para trabajar, es decir, necesitan de otros programas para poder funcionar y en ocasiones hay algunos que no se llevan bien entre ellos, o que las versiones  ya no son comptibles... todo este tipo de problemas lo soluciona [Conda](https://docs.conda.io/en/latest/) en la mayoría de los casos.
 
-Resulta una herramienta de gran valor en la bionformática, nos permite trabajar con versiones específicas de manera aislada al equipo global. Imaginemos que todos nosotros nos conectamos al mismo cluster para trabajar, gestionar todas los programas necesarios resultaría en un caos, en cambio si cada uno puede tener su propio espacio de trabajo sin influir en el sistema de los demás representa una enorme ventaja.
+Resulta una herramienta de gran valor en la bionformática, nos permite trabajar con versiones específicas de manera aislada en el equipo global. Imaginemos que todos nosotros nos conectamos al mismo cluster para trabajar, gestionar todas los programas necesarios para nuestro trabajo resultaría en un caos, en cambio si cada uno puede tener su propio espacio de trabajo sin influir en el sistema de los demás representa una enorme ventaja.
 
-En esta sección veremos como instalar Conda en nuestros equipos ya haremos un pequeño ejercico para ver como se trabaja con estas herramientas por línea de comandos. 
+En esta sección veremos como instalar Conda en nuestros equipos y haremos un pequeño ejercico para ver como se trabaja con estas herramientas por línea de comandos. 
 
 Instalación:
 
-1. Descarga el instalor adecuado para tu SO de [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/), para ello da click derecho sobre el instlador y copia el enlace.
+1. Descarga el instalador adecuado para tu SO de [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/), para ello da click derecho sobre el instlador y copia el enlace.
 2. Abre tu terminal Linux, escribe wget, pega el enlace que copiaste y ejecuta:
     
         wget enlace_conda
